@@ -1,0 +1,118 @@
+{% extends 'admins/adminbase.html'%}
+{%load static%}
+{%block contents%}
+<!--<style>-->
+<!--    .bg-light{-->
+<!--    margin-top: -500px;-->
+<!--    background: #65cd00;-->
+<!--    padding:10px;-->
+<!--    }-->
+
+<!--</style>-->
+
+<section class="we-do">
+    <div class="container">
+        <div class="we-do-details">
+            <div class="section-header text-center">
+                <h2>Detailed Classification Report</h2>
+                <p>
+                    <center>
+                <h2>Randome Forest</h2>
+                {{rf|safe}}
+                <h2>Decision Tree</h2>
+                {{dt|safe}}
+                <h2>Naive Bayes</h2>
+                {{nb|safe}}
+                <h2>Gradient Boosting</h2>
+                {{gb|safe}}
+                </center>
+
+                </p>
+            </div><!--/.section-header-->
+            <div class="we-do-carousel">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="single-we-do-box text-center">
+                            <div class="we-do-description">
+                                <div class="we-do-info">
+                                    <div class="we-do-img">
+                                        <img src="{%static 'images/home/consultency.png'%}" alt="image of consultency"/>
+                                    </div><!--/.we-do-img-->
+                                    <div class="we-do-topics">
+                                        <h2>
+                                            <a href="#">
+                                                Brown Spot Rice disease
+                                            </a>
+                                        </h2>
+                                    </div><!--/.we-do-topics-->
+                                </div><!--/.we-do-info-->
+                                <div class="we-do-comment">
+                                    <p>
+                                        BSR has been widely overlooked as one of the most widespread and most
+                                        destructive rice diseases. Brown spot is a fungal disease that infects
+                                        coleoptiles, trees, sheaths of the leaves, roots of panicles.
+                                    </p>
+                                </div><!--/.we-do-comment-->
+                            </div><!--/.we-do-description-->
+                        </div><!--/.single-we-do-box-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="single-we-do-box text-center">
+                            <div class="we-do-description">
+                                <div class="we-do-info">
+                                    <div class="we-do-img">
+                                        <img src="{%static 'images/home/busisness_grow.png'%}" alt="image of business"/>
+                                    </div><!--/.we-do-img-->
+                                    <div class="we-do-topics">
+                                        <h2>
+                                            <a href="#">
+                                                Leaf Smut Rice disease
+                                            </a>
+                                        </h2>
+                                    </div><!--/.we-do-topics-->
+                                </div><!--/.we-do-info-->
+                                <div class="we-do-comment">
+                                    <p>
+                                        It is a common epidemic in high humidity. It is caused by fungus (Ustilaginoidea
+                                        virens). This fungus destroys rice seeds then creates many fibers and seeds in
+                                        that seed until it emerge out of the seed group of fibers and reproduction on
+                                        this seed to be dark green color.
+                                    </p>
+                                </div><!--/.we-do-comment-->
+                            </div><!--/.we-do-description-->
+                        </div><!--/.single-we-do-box-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="single-we-do-box text-center">
+                            <div class="we-do-description">
+                                <div class="we-do-info">
+                                    <div class="we-do-img">
+                                        <img src="{%static 'images/home/support-logo.png'%}" alt="image of support"/>
+                                    </div><!--/.we-do-img-->
+                                    <div class="we-do-topics">
+                                        <h2>
+                                            <a href="#">
+                                                Bacterial Leaf Blight disease
+                                            </a>
+                                        </h2>
+                                    </div><!--/.we-do-topics-->
+                                </div><!--/.we-do-info-->
+                                <div class="we-do-comment">
+                                    <p>
+                                        BLB is caused by Xanthomonas Oryzae. It causes seedlings to get wilted and
+                                        leaves to yellow and die. The disease most often occurs in regions where the
+                                        contaminated plants have weeds and stubbles. It may occur in both tropical and
+                                        temperate habitats, particularly in lowland irrigated and rainfed regions.
+                                    </p>
+                                </div><!--/.we-do-comment-->
+                            </div><!--/.we-do-description-->
+                        </div><!--/.single-we-do-box-->
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.we-do-carousel-->
+        </div><!--/.we-do-details-->
+    </div><!--/.container-->
+</section><!--/.we-do-->
+
+
+{%endblock%}

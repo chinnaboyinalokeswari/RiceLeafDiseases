@@ -1,0 +1,6 @@
+numpy
+Pillow
+sklearn
+scikit-image
+django
+pandas

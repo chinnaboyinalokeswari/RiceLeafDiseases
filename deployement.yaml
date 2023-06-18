@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: riceleafdiseases
+spec:
+  selector:
+    app: riceleafdiseases
+  ports:
+  - protocol: "TCP"
+    port: 6000
+    targetPort: 8003
+  type: LoadBalancer
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: riceleafdiseases
+spec:
+  selector:
+    matchLabels:
+      app: riceleafdiseases
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: riceleafdiseases
+    spec:
+      containers:
+      - name: riceleafdiseases
+        image: riceleafdiseases
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8003
